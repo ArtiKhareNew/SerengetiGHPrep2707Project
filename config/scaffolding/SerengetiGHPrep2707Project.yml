@@ -8,7 +8,37 @@ packages:
   gitUsername: ArtiKhareNew
   gitBranch: main
 - name: MultiplyPublicService
+  version: "7.0"
   gitServerName: srcCtrl_bitbucket_Arti_shared
   gitUrl: https://bitbucket.org/testartiibm
   gitUsername: artikhare
   gitBranch: newbranch
+services:
+- serviceName: project.serengetighprep2707.integrations:bitbucketfs
+  packages:
+  - name: SerengetiGHPrep2707Project
+    version: "1.0"
+  - name: MultiplyPublicService
+    version: "7.0"
+- serviceName: MultiplyPublicService:multiply_svc
+  packages:
+  - name: MultiplyPublicService
+    version: "7.0"
+- serviceName: pub.math:multiplyInts
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.878
+- serviceName: project.serengetighprep2707.integrations:en
+  packages:
+  - name: SerengetiGHPrep2707Project
+    version: "1.0"
+  - name: MultiplyPublicService
+    version: "7.0"
+- serviceName: pub.security:encrypt
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.878
+- serviceName: pub.security:decrypt
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.878
