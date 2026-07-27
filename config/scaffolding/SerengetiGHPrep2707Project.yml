@@ -42,3 +42,17 @@ services:
   packages:
   - name: WmPublic
     version: 12.1.0.0.878
+- serviceName: project.serengetighprep2707.integrations:sign
+  packages:
+  - name: SerengetiGHPrep2707Project
+    version: "1.0"
+  - name: MultiplyPublicService
+    version: "7.0"
+- serviceName: pub.security:sign
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.878
+- serviceName: pub.security:verify
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.878
